@@ -15,5 +15,12 @@ function checkCountValue() {
 
     } else if (count === 20) {
         alert("Votre publication Instagram a gagne 20 abonnes ! Continuez comme ca !");
-    }
+    } 
+
+}
+
+function resetCount() {
+    document.getElementById('countDisplay').innerHTML=0;
+    alert("Votre conteur a ete reinitialise");
+
 }
