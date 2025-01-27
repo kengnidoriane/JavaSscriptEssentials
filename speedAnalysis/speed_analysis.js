@@ -30,6 +30,7 @@ function endTest() {
     var typedWords = userTypedText.split(/\s+/).filter(function (word) {
         return word !== "";
     }).length;
+    var lengthWords = userTypedText.length;
 
     var wpm = 0; // Valeur par défaut
 
@@ -40,6 +41,7 @@ function endTest() {
     // Afficher les résultats
     var outputDiv = document.getElementById("output");
     outputDiv.innerHTML = "<h2>Résultats du Test de Dactylographie :</h2>" +
+        "<p>Longeur total : " + lengthWords + "</p>" +
         "<p>Mots Taper : " + typedWords + "</p>" +
         "<p>Temps Écoulé : " + timeElapsed.toFixed(2) + " secondes</p>" +
         "<p>Mots Par Minute (WPM) : " + wpm + "</p>";
